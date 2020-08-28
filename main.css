@@ -1,0 +1,64 @@
+/* Colors */
+
+.bg-willow-grove {
+    background-color: #687864!important;
+}
+
+.bg-calypso {
+    background-color: #31708E!important;
+}
+
+.bg-wedgewood {
+    background-color: #5085A5!important;
+}
+
+.bg-cornflower {
+    background-color: #8FC1E3!important;
+}
+
+.bg-catskill-white {
+    background-color: #F7F9FB!important;
+}
+.col-willow-grove {
+    color: #687864!important;
+}
+
+.col-calypso {
+    color: #31708E!important;
+}
+
+.col-wedgewood {
+    color: #5085A5!important;
+}
+
+.col-cornflower {
+    color: #8FC1E3!important;
+}
+
+.col-catskill-white {
+    color: #F7F9FB!important;
+}
+
+/* Bootstrap modificiations */
+.nav-item {
+    padding: 30px 40px;
+    font-size: 17px;
+    color: white!important;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: white;
+    color: #31708E!important;
+    transition: all 0.5s;
+}
+
+.nav-link {
+    color: inherit!important;
+}
+
+/* Other */
+.logo {
+    height: 90px;
+}
