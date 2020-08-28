@@ -58,7 +58,37 @@
     color: inherit!important;
 }
 
+.carousel {
+    height: calc(100vh - 100px);
+}
+
+.carousel-item img {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    object-fit: cover;
+} 
+
+.carousel-control-next, .carousel-control-prev{
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
 /* Other */
+.body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .logo {
     height: 90px;
 }
