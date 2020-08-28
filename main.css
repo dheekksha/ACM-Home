@@ -39,9 +39,53 @@
     color: #F7F9FB!important;
 }
 
+/* Font Sizes */
+
+.fs1 {
+    font-size: 10px;
+}
+
+.fs2 {
+    font-size: 15px;
+}
+
+.fs3 {
+    font-size: 17.5px;
+}
+
+.fs4 {
+    font-size: 20px;
+}
+
+.fs5 {
+    font-size: 22.5px;
+}
+
+@media (max-width: 992px) {
+    .fs1 {
+        font-size: 5px;
+    }
+    
+    .fs2 {
+        font-size: 10px;
+    }
+    
+    .fs3 {
+        font-size: 12.5px;
+    }
+    
+    .fs4 {
+        font-size: 15px;
+    }
+    
+    .fs5 {
+        font-size: 17.5px;
+    }
+}
+
 /* Bootstrap modificiations */
 .nav-item {
-    padding: 30px 40px;
+    padding: 15px 40px;
     font-size: 17px;
     color: white!important;
     transition: all 0.5s;
@@ -58,13 +102,33 @@
     color: inherit!important;
 }
 
+@media (max-width: 992px) {
+    .nav-item, .navbar-nav {
+        width: 50vw;
+    }
+
+    .navbar-collapse {
+        background-color: transparent!important;
+    }
+
+
+    .nav-toggle {
+        width: calc(100vw - 195.376px);
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
 .carousel {
-    height: calc(100vh - 100px);
+    margin-top: 70px;
+    height: calc(100vh - 70px);
 }
 
 .carousel-item img {
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     object-fit: cover;
 } 
 
@@ -90,5 +154,10 @@
 }
 
 .logo {
-    height: 90px;
+    height: 60px;
 }
+
+.logo-big {
+    max-width: 100%;
+}
+

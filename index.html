@@ -14,12 +14,22 @@
 </head>
 <body class="bg-catskill-white">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-calypso sticky-top p-0">
-        <a class="navbar-brand px-5 bg-white" href="#">
-            <img src="http://vitchennai.acm.org/images/acm_logo.png" alt="" class="logo">
-        </a>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ml-auto my-0">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0 bg-transparent">
+        <div>
+            <a class="navbar-brand px-5 mr-0 bg-catskill-white" href="#">
+                <img src="http://vitchennai.acm.org/images/acm_logo.png" alt="" class="logo">
+            </a>
+        </div>
+        
+        <div class="nav-toggle bg-calypso text-right">
+             <button class="navbar-toggler d-lg-none border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+       
+        <div class="collapse navbar-collapse text-center bg-calypso" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto my-0 bg-calypso">
                 <li class="nav-item">
                     <span class="nav-link">Home</span>
                 </li>
@@ -39,11 +49,11 @@
     </nav>
 
     <!-- Carousel -->
-    <div id="carouselId" class="carousel slide" data-ride="carousel">
+    <div id="carouselMain" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselId" data-slide-to="1"></li>
-            <li data-target="#carouselId" data-slide-to="2"></li>
+            <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselMain" data-slide-to="1"></li>
+            <li data-target="#carouselMain" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner text-center" role="listbox">
             <div class="carousel-item active">
@@ -56,12 +66,41 @@
                 <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Third slide">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
             <i class="fas fa-angle-left fa-3x col-cornflower"></i>
         </a>
-        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
             <i class="fas fa-angle-right fa-3x col-cornflower"></i>
         </a>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="jumbotron jumbotron-fluid bg-transparent mb-0">
+        <div class="container">
+            <h1 class="display-5 text-center col-calypso d-lg-none">ACM VIT Student Chapter</h1>
+            <h1 class="display-2 text-center col-calypso d-none d-lg-block">ACM VIT Student Chapter</h1>
+            <p class="lead text-center fs5">Some random introduction text or some other one liner shit</p>
+            <hr class="my-4 w-50">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 text-center my-4 my-lg-auto">
+                    <img src="http://vitchennai.acm.org/images/acm_logo.png" alt="" class="logo-big">
+                </div>
+                <div class="col-md-12 col-lg-8 mt-4 mt-lg-0">
+                    <p class="fs4">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia repellat sit in ea deserunt quod! Necessitatibus dolorum maxime deserunt voluptates tempore consequatur in, impedit dignissimos nobis atque, dolores autem. At!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem commodi quod culpa eaque soluta, accusantium saepe corrupti ipsam similique praesentium provident officia magni quae neque totam nobis autem quisquam nihil?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nobis quod laudantium libero rerum ad repudiandae obcaecati, excepturi suscipit tempore itaque nihil, ullam ea sapiente, reiciendis a? Quos, dolorem pariatur!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sint ipsam quidem aperiam nostrum nam recusandae quam dolorem quas magni mollitia vitae, quo est tempora ducimus explicabo praesentium, voluptatum veritatis!
+                    </p>
+                    <p class="fs4">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia repellat sit in ea deserunt quod! Necessitatibus dolorum maxime deserunt voluptates tempore consequatur in, impedit dignissimos nobis atque, dolores autem. At!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem commodi quod culpa eaque soluta, accusantium saepe corrupti ipsam similique praesentium provident officia magni quae neque totam nobis autem quisquam nihil?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nobis quod laudantium libero rerum ad repudiandae obcaecati, excepturi suscipit tempore itaque nihil, ullam ea sapiente, reiciendis a? Quos, dolorem pariatur!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sint ipsam quidem aperiam nostrum nam recusandae quam dolorem quas magni mollitia vitae, quo est tempora ducimus explicabo praesentium, voluptatum veritatis!
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
